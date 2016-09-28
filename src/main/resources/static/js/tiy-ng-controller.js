@@ -41,7 +41,7 @@ angular.module('TIYAngularApp', [])
             console.log("About to go get me some data!");
             $scope.name = "JavaScript Master Guru";
 
-            $http.get("http://localhost:8080/games.json")
+            $http.get("/games.json")
                 .then(
                     function successCallback(response) {
                         console.log(response.data);
