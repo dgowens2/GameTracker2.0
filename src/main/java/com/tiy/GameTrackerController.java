@@ -111,7 +111,7 @@ public class GameTrackerController {
             throw new Exception("Incorrect password");
         }
         session.setAttribute("user", user); //not yet set on the model so it's not yet visible to the View
-        return "redirect:/";
+        return "redirect:/games";
     }
 
     @RequestMapping(path = "/logout", method = RequestMethod.POST)
